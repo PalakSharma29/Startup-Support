@@ -1,0 +1,306 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('assets/banner-bg.png');
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
+}
+
+/* Navbar CSS */
+/* Navbar CSS */
+/* Navbar CSS */
+.navbar {
+  background-color: transparent;
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  /* Adjust width and styles for your logo */
+}
+
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.75;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px 20px;
+  position: relative;
+  background-color: transparent;
+}
+
+.nav-item a.nav-link:hover {
+  color: #121212;
+  background-color: #fff;
+}
+
+.nav-item a.nav-link::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item a.nav-link:hover::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Your existing CSS for larger screens */
+
+/* Your existing CSS for larger screens */
+
+@media (max-width: 500px) {
+  /* Adjust styles for smaller screens, e.g., mobile devices */
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0; /* Adjust the padding to your preference */
+  }
+}
+
+
+
+.lets-connect {
+  text-align: center;
+}
+
+.lets-connect .vvd {
+  display: inline-block;
+  border-radius: 25px; /* Adjust the border-radius to control the roundness */
+  width: 100px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  background-color: #fff;
+  color: #121212;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.lets-connect .vvd:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+
+
+
+
+
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  padding: 160px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .content {
+  max-width: 40%; /* Reduce the maximum width to create space for the image */
+  text-align: right; /* Align the text to the right */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+  letter-spacing: 0.8px;
+  max-width: 100%; /* Adjust the maximum width to make sure text doesn't overflow */
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 100%; /* Set the width to 100% for a two-line text */
+}
+
+.banner img {
+  max-width: 30%;
+  animation: updown 3s linear infinite;
+  margin-left: 20px; /* Add margin to create space between image and text */
+}
+
+
+.banner-button {
+  display: inline-block;
+  border-radius: 25px;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.banner-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+
+  .banner .content {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
